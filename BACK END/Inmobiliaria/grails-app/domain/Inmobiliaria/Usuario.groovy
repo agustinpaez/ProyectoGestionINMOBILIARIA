@@ -1,6 +1,8 @@
 package Inmobiliaria
 
-class Usuario {
+class Usuario extends Persona{
+
+	char tipo_user
 
     static constraints = {
     }
