@@ -39,6 +39,12 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ingresar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">¿Eres nuevo?</a>
+                      </li>
                     </ul>
                   </div>    
             </div>

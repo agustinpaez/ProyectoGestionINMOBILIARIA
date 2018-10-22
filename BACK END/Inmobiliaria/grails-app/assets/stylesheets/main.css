@@ -2,7 +2,13 @@
 body,
 input, select, textarea {
     font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
+    background-image:url("http://casagrandelaplace.com.ar/wp-content/uploads/2017/02/casagrande-laplace-slide1-vivi-en-modo.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 100%;
+}   
+
+
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
@@ -11,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 /* BASE LAYOUT */
 
 html {
-    background-color: #ddd;
+    background-color: black;
     background-image: -moz-linear-gradient(center top, #aaa, #ddd);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
     background-image: linear-gradient(top, #aaa, #ddd);
@@ -635,4 +641,8 @@ a.skip {
 img.grails-logo {
     height:340px;
     margin-top:-10px;
+}
+
+#body{
+    background-color: black;
 }
