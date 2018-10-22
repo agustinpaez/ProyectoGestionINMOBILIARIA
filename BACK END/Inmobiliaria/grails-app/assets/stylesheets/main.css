@@ -1,6 +1,5 @@
 /* FONT STACK */
-body,
-input, select, textarea {
+body {
     font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     background-image:url("http://casagrandelaplace.com.ar/wp-content/uploads/2017/02/casagrande-laplace-slide1-vivi-en-modo.jpg");
     background-repeat: no-repeat;
