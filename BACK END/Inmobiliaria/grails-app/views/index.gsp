@@ -8,7 +8,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheets/estilo.css">
 </head>
-<body id="bodi">
+<body id="principal">
 
    
 

@@ -74,12 +74,29 @@
 
     <g:layoutBody/>
 
-    <div class="footer" role="contentinfo"></div>
+
+    <div class="footer-bottom">
+      <div class="container
+        <div class="row
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6
+            <div class="copyright
+              © 
+            </div
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="design">
+               <a href="#">Inmobiliaria </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer" role="contentinfo"></div>
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>
     </div>
-
+ -->
     <asset:javascript src="application.js"/>
 
 </body>
