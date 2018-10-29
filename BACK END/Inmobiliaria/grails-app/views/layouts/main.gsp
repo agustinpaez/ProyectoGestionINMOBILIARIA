@@ -16,7 +16,8 @@
 
     <g:layoutHead/>
 </head>
-<body>
+
+<body id="cuerpo">
 
      <nav class="navbar navbar-expand-md fixed-top top-nav">
             <div class="container">
@@ -74,7 +75,8 @@
 
     <g:layoutBody/>
 
-    <div class="footer" role="contentinfo"></div>
+    <div class="footer" role="contentinfo">
+    </div>
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>

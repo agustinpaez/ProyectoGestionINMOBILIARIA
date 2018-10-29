@@ -8,13 +8,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheets/estilo.css">
 </head>
-<body id="bodi">
+
+
+<body>
 
    
 
    <br><br><br><br><br>
             <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
+                <h2>Controladores Disponibles</h2>
                 <ul>
                     <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
                         <li class="controller">
