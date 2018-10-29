@@ -7,6 +7,30 @@ body {
     background-size: 100%;
 }   
 
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+    margin-bottom: 0%;
+    position: absolute;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
 
 
 h1, h2, h3, h4, h5, h6 {
