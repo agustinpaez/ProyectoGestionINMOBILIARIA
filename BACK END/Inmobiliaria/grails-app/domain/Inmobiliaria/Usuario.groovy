@@ -2,7 +2,8 @@ package Inmobiliaria
 
 class Usuario extends Persona{
 
-	char tipo_user
+	String nombreUsuario
+    char tipo_user
 
     static constraints = {
     }

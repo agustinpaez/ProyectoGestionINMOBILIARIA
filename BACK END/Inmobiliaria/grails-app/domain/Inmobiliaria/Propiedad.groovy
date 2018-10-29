@@ -9,5 +9,11 @@ class Propiedad extends Inmobiliaria{
 	String estado_propiedad 
 
     static constraints = {
+
+		clasificacion(blank: false)
+		localizacion(blank: false)
+		comprador(blank: false)
+		vendedor(blank: false)
+		estado_propiedad(blank: false)
     }
 }
