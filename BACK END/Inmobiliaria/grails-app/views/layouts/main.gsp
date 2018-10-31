@@ -19,14 +19,14 @@
 
 <body id="cuerpo">
 
-     <nav class="navbar navbar-expand-md fixed-top top-nav">
-            <div class="container">
+     <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: #DAF7A6">
+            <div class="container" style="background-color: #DAF7A6">
                   <a class="navbar-brand" href="#"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #DAF7A6">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
                         <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
@@ -44,7 +44,8 @@
                         <a class="nav-link" href="#">Ingresar</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">¿Eres nuevo?</a>
+                        <g:link controller="cliente" action="create"><span class="nav-link">¿Eres nuevo?</span></g:link>
+                        <!-- <a class="nav-link" href="#">¿Eres nuevo?</a> -->
                       </li>
                     </ul>
                   </div>    
