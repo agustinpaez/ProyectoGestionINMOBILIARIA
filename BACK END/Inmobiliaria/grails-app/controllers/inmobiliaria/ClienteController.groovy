@@ -96,4 +96,11 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def login() {
+       if (request.get) {
+         return render(view: 'login')
+       }
+    }
+
 }

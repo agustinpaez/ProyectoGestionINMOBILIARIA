@@ -1,8 +1,11 @@
 /* FONT STACK */
-body,
-input, select, textarea {
+body {
     font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
+    background-image:url("../img/backround.jpg");
+    background-repeat: no-repeat;
+    background-color: #cab6b6;
+    background-size: 100%;
+}   
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
