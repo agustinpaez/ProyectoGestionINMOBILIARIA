@@ -104,7 +104,10 @@ class ClienteController {
    }
  }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0ef5f1850dadcb713bd03187af15eec069342de
     // def login() {
     //     if (request.get) {
     //         return render(view: 'login')
