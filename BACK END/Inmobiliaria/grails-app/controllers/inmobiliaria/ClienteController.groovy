@@ -98,9 +98,12 @@ class ClienteController {
         }
     }
 
-    def login(){
-        
-    }
+    def login() {
+   if (request.get) {
+     return render(view: 'login')
+   }
+ }
+
 
     // def login() {
     //     if (request.get) {
@@ -108,7 +111,7 @@ class ClienteController {
     //     }
     //     return render(view: 'login')
     // }
-}
+
     // login user
 
     // def login() {
