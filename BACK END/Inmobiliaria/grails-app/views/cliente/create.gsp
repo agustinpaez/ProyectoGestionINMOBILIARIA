@@ -4,16 +4,17 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'cliente.label', default: 'Cliente')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
+<<<<<<< HEAD
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'estilo.css')}">
          <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'bootstrap.css')}">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+=======
+>>>>>>> parent of 5ea9aa5... form registrar cliente
     </head>
     <body>
-
-        <br><br><br><br><br>
-       <!--  <a href="#create-cliente" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+        <a href="#create-cliente" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
                 <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
@@ -32,6 +33,7 @@
                 </g:eachError>
             </ul>
             </g:hasErrors>
+<<<<<<< HEAD
             <div class="container"> -->
                 <!-- <g:form resource="${this.cliente}" method="POST">
                     <fieldset class="form-control">
@@ -52,6 +54,15 @@
                             <f:all bean="cliente"/>
                             <g:submitButton name="create" class="save" class="btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}"/>
             </div>
+=======
+            <g:form resource="${this.cliente}" method="POST">
+                <fieldset class="form">
+                    <f:all bean="cliente"/>
+                </fieldset>
+                <fieldset class="buttons">
+                    <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+                </fieldset>
+>>>>>>> parent of 5ea9aa5... form registrar cliente
             </g:form>
         </div>
     </body>
