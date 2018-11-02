@@ -3,9 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>
-        <g:layoutTitle default="Grails"/>
-    </title>
+    <title>Inmobiliaria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -42,10 +40,9 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Ingresar</a>
-                        <!-- <g:link controller="cliente" action="login" ><span class="nav-link">INGRESAR</span></g:link> -->
                       </li>
                       <li class="nav-item">
-                        <g:link controller="usuario" action="create" ><span class="nav-link">¿ERES NUEVO?</span></g:link>
+                        <a class="nav-link"><g:link controller="usuario" action="create" >¿ERES NUEVO?</g:link></a>
                       </li>
                     </ul>
                   </div>    
