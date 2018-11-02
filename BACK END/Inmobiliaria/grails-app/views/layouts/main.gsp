@@ -41,8 +41,7 @@
                         <a class="nav-link" href="#">Contacto</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Ingresar</a>
-                      </li>
+                        <g:link resource="login"><span class="nav-link">Ingresar</span></g:link>
                       <li class="nav-item">
                         <g:link controller="cliente" action="create"><span class="nav-link">¿Eres nuevo?</span></g:link>
                         <!-- <a class="nav-link" href="#">¿Eres nuevo?</a> -->

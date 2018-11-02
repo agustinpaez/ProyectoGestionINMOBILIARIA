@@ -3,6 +3,7 @@ package Inmobiliaria
 class Cliente extends Persona{
 
 	String id_cliente
+	String password
 	Date fecha_inicio
 
     static hasMany = [propiedades: Propiedad, contratos: Contrato]
