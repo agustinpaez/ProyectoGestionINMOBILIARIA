@@ -41,7 +41,16 @@
                         <a class="nav-link" href="#">Contacto</a>
                       </li>
                       <li class="nav-item">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <g:link controller="cliente" action="login"><span class="nav-link">Ingresar</span></g:link>
+=======
+                        <a class="nav-link" href="#">Ingresar</a>
+                      </li>
+>>>>>>> parent of 28b0ee5... falta error login
+=======
                         <g:link resource="login"><span class="nav-link">Ingresar</span></g:link>
+>>>>>>> d0ef5f1850dadcb713bd03187af15eec069342de
                       <li class="nav-item">
                         <a class="nav-link" href="#">¿Eres nuevo?</a>
                       </li>

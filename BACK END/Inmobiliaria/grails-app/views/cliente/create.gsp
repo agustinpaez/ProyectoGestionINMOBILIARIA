@@ -6,7 +6,6 @@
         <title><g:message code="default.create.label" args="[entityName]" /></title>
 <<<<<<< HEAD
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'estilo.css')}">
-         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'bootstrap.css')}">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -45,8 +44,6 @@
                 </g:form>
             </div>
         </div> -->
-
-        <br><br><br>
         <h1 class="text-center" align="text-center">REGISTRO DE USUARIO</h1><br>
         <div class="row">
             <g:form resource="${this.cliente}" method="POST" class="col-md-12">

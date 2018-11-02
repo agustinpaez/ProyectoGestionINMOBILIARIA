@@ -9,7 +9,6 @@ class ClienteController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond clienteService.list(params), model:[clienteCount: clienteService.count()]
@@ -97,14 +96,25 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
+<<<<<<< HEAD
 
+    def login() {
+   if (request.get) {
+     return render(view: 'login')
+   }
+ }
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> d0ef5f1850dadcb713bd03187af15eec069342de
     // def login() {
     //     if (request.get) {
     //         return render(view: 'login')
     //     }
     //     return render(view: 'login')
     // }
-}
+
     // login user
 
     // def login() {
@@ -140,3 +150,6 @@ class ClienteController {
    //    render(view: "/administracion/principal")
    //  }
 
+=======
+}
+>>>>>>> parent of 28b0ee5... falta error login
