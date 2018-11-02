@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: inmobiliaria
+        defaultPackage: proyectoinmobiliaria
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
@@ -99,11 +99,7 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-<<<<<<< HEAD
             url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
-=======
-            url: jdbc:postgresql://localhost:5433/Prueba
->>>>>>> d949365cd4fd3bd5d9fa182ad386753c616eb74d
     test:
         dataSource:
             dbCreate: update
