@@ -96,60 +96,6 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
-<<<<<<< HEAD
 
-    def login() {
-   if (request.get) {
-     return render(view: 'login')
-   }
- }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> d0ef5f1850dadcb713bd03187af15eec069342de
-    // def login() {
-    //     if (request.get) {
-    //         return render(view: 'login')
-    //     }
-    //     return render(view: 'login')
-    // }
-
-    // login user
-
-    // def login() {
-
-    //     if (params.email == 'a@g.com' && params.password == 'admin'){
-    //         flash.message= "Inicio correcto"
-    //     }else{
-    //         flash.message= "Inicio erroneo"
-    //     }
-
-    //     redirect(action: 'index')
-   // if (request.get) {
-   //   return render(view: 'login')
-   // }
-
-   //  def u = Persona.findByEmail(params.mail)
-   //   if (u) {
-   //     if (u.password == u.generateMD5_A(params.password)) {
-   //        session.usuario = u
-
-   //        redirect(controller: "administracion", action: "sesion")
-
-   //      } else {
-   //        render(view: "login", model: [message: "Constraseña Incorrecta"])
-   //      }
-   //    } else {
-   //      render(view: "login", model: [message: "No existe el usuario ingresado"])
-   //    }
-   //  }
-
-   //  def logout() {
-   //    session.usuario=null
-   //    render(view: "/administracion/principal")
-   //  }
-
-=======
 }
->>>>>>> parent of 28b0ee5... falta error login
+
