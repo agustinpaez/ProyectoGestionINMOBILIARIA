@@ -7,7 +7,7 @@ class Persona {
 	long dni
 	long telefono
 	String direccion
-	String email
+	String mail
 
     static constraints = {
 
@@ -16,7 +16,7 @@ class Persona {
 		dni(blank: false, unique: true)
 		telefono(blank: true, matches: "[0-9]{3}-[0-9]{7}")
 		direccion(blank: false, maxsize: 100)
-		email(blank: false, maxsize: 100, email:true)
+		mail(blank: false, maxsize: 100, email:true)
 
 
     }

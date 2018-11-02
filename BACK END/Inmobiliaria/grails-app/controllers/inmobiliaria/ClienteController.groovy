@@ -9,7 +9,6 @@ class ClienteController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond clienteService.list(params), model:[clienteCount: clienteService.count()]
@@ -97,6 +96,7 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
+<<<<<<< HEAD
 
     def login() {
    if (request.get) {
@@ -147,3 +147,6 @@ class ClienteController {
    //    render(view: "/administracion/principal")
    //  }
 
+=======
+}
+>>>>>>> parent of 28b0ee5... falta error login
