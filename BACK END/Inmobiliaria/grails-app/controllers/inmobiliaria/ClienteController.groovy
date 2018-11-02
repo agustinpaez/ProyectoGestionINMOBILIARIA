@@ -96,6 +96,4 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
-
 }
-

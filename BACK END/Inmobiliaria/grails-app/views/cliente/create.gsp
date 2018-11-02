@@ -47,7 +47,7 @@
         <div class="row">
             <g:form resource="${this.cliente}" method="POST" class="col-md-12">
             <div class="form-group">
-                            <f:all bean="cliente"/>
+                            <f:all bean="cliente" class="form-group"></f:all>
                             <g:submitButton name="create" class="save" class="btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}"/>
             </div>
 
