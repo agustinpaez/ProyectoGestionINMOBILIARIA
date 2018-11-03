@@ -14,8 +14,11 @@
     </g:if>
       <br><br><br><br><br>
       <div class="row">
+        <div class="col-md-3">
+          
+        </div>
         <div class="col-md-6">
-          <h1>Iniciar Sesion</h1>
+          <h1 class="text-center">Iniciar Sesion</h1>
           <g:form controller="ingresar" action="ingresar" method="post">
               <label for='email'>Ingrese su Email registrado:</label>
               <input type='email' id='email' name='email' class="form-control" required/>
@@ -26,7 +29,7 @@
               <input type="submit" value="Ingresar" class="btn btn-prymary" />
           </g:form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           
         </div>
       </div>
