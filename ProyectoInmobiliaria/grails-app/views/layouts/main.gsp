@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">Contacto</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Ingresar</a>
+                         <a class="nav-link"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="usuario" action="create" >¿ERES NUEVO?</g:link></a>
