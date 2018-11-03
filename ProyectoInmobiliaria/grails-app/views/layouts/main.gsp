@@ -30,7 +30,7 @@
                         <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Propiedades</a>
+                        <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Sobre Nosotros</a>
