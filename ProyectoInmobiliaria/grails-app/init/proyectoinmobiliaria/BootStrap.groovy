@@ -9,29 +9,30 @@ class BootStrap {
 	    barrio:'Centro',
 	    localidad:'Capital',
 	    ciudad: 'San Fernando del Valle de Catamarca',
-	    superficie: 64,
 	    precio: 1000000,
-	    rubro: 'venta',
-	    categoria:'Casa',
-	    cantDormitorio:2,
+	    tipo:'Departamento',
 	    cantBanios:1,
-	    estado:'Libre')
+	    cantDormitorios:2,
+	    piso:7,
+	    nDepartamento:75,
+	    categoria: 'Venta',
+	    estado:'Disponible')
 	    prop1.save(flush:true)
 
+	 //		String calle
+     //    Integer numero
+     //    String barrio
+     //    String localidad
+     //    String ciudad
+     //    BigDecimal precio
+     //    String tipo
+     //    Integer cantBanios
+     //    Integer cantDormitorios
+     //    Integer piso
+     //    Integer nDepartamento
+     //    String categoria
+     //    String estado
 
-	    def prop2= new Propiedad( calle:'Rivadavia',
-	    numero: 15,
-	    barrio:'9 de Julio',
-	    localidad:'Capital',
-	    ciudad: 'San Fernando del Valle de Catamarca',
-	    superficie: 100,
-	    precio: 90000,
-	    rubro: 'venta',
-	    categoria:'Local',
-	    cantDormitorio:3,
-	    cantBanios:2,
-	    estado:'Libre')
-	    prop2.save(flush:true)
 
     }
     def destroy = {
