@@ -10,7 +10,7 @@ class IngresarController{
             if (u) {
             if (u.password == params.password) {
                     session.usuario = u
-                    redirect(view:"/index")
+                    redirect(controller:'cliente', action:'index')
 
                     } else {
                     render(view: "ingresar", model: [message: "Constraseña Incorrecta"])
