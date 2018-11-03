@@ -4,28 +4,28 @@ class IngresarController{
 
   def ingresar() {
         if (request.get) {
-            return render(view: 'ingresar')
+            render(view: 'ingresar')
         }
-
-        /*
         def u = Usuario.findByEmail(params.email)
             if (u) {
-            if (u.password == u.generateMD5_A(params.password)) {
+            if (u.password == params.password) {
                     session.usuario = u
-
-                    redirect(controller: "administracion", action: "sesion")
+                    redirect(view:"/index")
 
                     } else {
                     render(view: "ingresar", model: [message: "Constraseña Incorrecta"])
                     }
             } else {
                 render(view: "ingresar", model: [message: "No existe el usuario ingresado"])
-            }*/
-        }
+            }
+    }
+
+    def iniciar(){
+        
+    }
 
     def logout() {
       session.usuario=null
-      render(view: "/administracion/principal")
     }
-    
+
 }
