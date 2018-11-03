@@ -7,10 +7,10 @@ class IngresarController{
             return render(view: 'ingresar')
         }
 
-        
+        /*
         def u = Usuario.findByEmail(params.email)
             if (u) {
-            if (u.password == 123 /*u.generateMD5_A(params.password*/)) {
+            if (u.password == u.generateMD5_A(params.password)) {
                     session.usuario = u
 
                     redirect(controller: "administracion", action: "sesion")
@@ -20,7 +20,7 @@ class IngresarController{
                     }
             } else {
                 render(view: "ingresar", model: [message: "No existe el usuario ingresado"])
-            }
+            }*/
         }
 
     def logout() {
