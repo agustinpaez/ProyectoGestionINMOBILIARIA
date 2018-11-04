@@ -13,6 +13,28 @@
                 <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
             </ul>
         </div> -->
+
+
+
+
+        
+                                <!-- la del user si funciona la de cliente no muestra la lista -->
+
+
+
+
+        <!-- <div id="list-usuario" class="content scaffold-list" role="main">
+            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <g:if test="${flash.message}">
+                <div class="message" role="status">${flash.message}</div>
+            </g:if>
+            <f:table collection="${usuarioList}" />
+
+            <div class="pagination">
+                <g:paginate total="${usuarioCount ?: 0}" />
+            </div>
+        </div> -->
+
         <div id="list-cliente" class="content scaffold-list" role="main">
             <h1><g:message code="default.list.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">

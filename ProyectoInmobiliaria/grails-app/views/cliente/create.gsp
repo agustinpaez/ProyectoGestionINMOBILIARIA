@@ -39,7 +39,7 @@
                 </g:form>
             </div>
         </div> -->
-        <br><br><br><br><br><br><br>
+        <br>
         <h1 class="text-center" align="text-center">REGISTRO DE CLIENTE</h1><br>
         <div class="row">
             <g:hasErrors bean="${this.cliente}">
@@ -49,13 +49,21 @@
                 </g:eachError>
             </ul>
             </g:hasErrors>
-            <h1 align="center"> CREAR USUARIO </h1>
-            <g:form resource="${this.cliente}" method="POST">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-6">
+                <g:form resource="${this.cliente}" method="POST">
                 <fieldset class="form">
                     <f:all bean="cliente"/>
                     <g:submitButton name="create" class="save" class="btn btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                 </fieldset>     
             </g:form>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+            
         </div>
     </body>
 </html>

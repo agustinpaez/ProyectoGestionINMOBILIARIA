@@ -4,6 +4,17 @@ class BootStrap {
 
     def init = { servletContext ->
 
+    	//CLIENTES
+
+    	def cliente1 = new Cliente(
+    		nombre:'Roberto',
+    		apellido:'Gomez',
+    		dni:12398765,
+    		direccion:'Valle viejo',
+    		telefono:'6374635267',
+    		email:'roberto@gmail.com'
+    		)
+
     	//PROPIEDADES
 
     	def prop1= new Propiedad( calle:'Belgrano',
