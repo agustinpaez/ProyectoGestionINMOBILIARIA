@@ -63,7 +63,10 @@
                         <a class="nav-link"><g:link controller="usuario" action="index" >USUARIOS</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="usuario" action="create" >Incorporar Cliente</g:link></a>
+                        <a class="nav-link"><g:link controller="cliente" action="create" >Incorporar Cliente</g:link></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"><g:link controller="usuario" action="create" >Incorporar Usuario</g:link></a>
                       </li>
                        <li class="nav-item">
                          <a class="nav-link"><g:link controller="propiedad" action="create">Incorporar propiedad</g:link></a>
@@ -78,8 +81,8 @@
 
     <g:layoutBody/>
 
-    <div class="footer" role="contentinfo">
-    </div>
+    <!-- <div class="footer" role="contentinfo">
+    </div> -->
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>
