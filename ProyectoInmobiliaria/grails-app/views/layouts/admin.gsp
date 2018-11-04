@@ -56,17 +56,20 @@
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                       <li class="nav-item">
+                        <a class="nav-link"><g:link controller="cliente" action="index" >CLIENTES</g:link></a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link"><g:link controller="usuario" action="index" >USUARIOS</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link"><g:link controller="usuario" action="create" >Incorporar Cliente</g:link></a>
                       </li>
-                      <li class="nav-item">
-                         <a class="nav-link"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>
+                       <li class="nav-item">
+                         <a class="nav-link"><g:link controller="propiedad" action="create">Incorporar propiedad</g:link></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link"><g:link controller="usuario" action="create" >    ¿ERES NUEVO?</g:link></a>
+                       <li class="nav-item">
+                         <a class="nav-link"><g:link controller="ingresar" action="ingresar">INGRESAR</g:link></a>
                       </li>
                     </ul>
                   </div>    

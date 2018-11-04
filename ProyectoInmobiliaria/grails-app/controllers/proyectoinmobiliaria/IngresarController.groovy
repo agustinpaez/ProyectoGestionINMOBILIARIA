@@ -9,8 +9,12 @@ class IngresarController{
         def u = Usuario.findByEmail(params.email)
             if (u) {
             if (u.password == params.password) {
-                    session.usuario = u
-                    redirect(controller:'cliente', action:'index')
+                    if(u.email=='agustin@gmail.com') {
+                        redirect(controller: "operador", action: "index")
+                    }else{
+                        session.usuario = u
+                        redirect(controller:'cliente', action:'index')          
+                    }
 
                     } else {
                     render(view: "ingresar", model: [message: "Constraseña Incorrecta"])
