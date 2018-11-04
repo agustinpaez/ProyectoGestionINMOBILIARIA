@@ -51,7 +51,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><g:link controller="cliente" action="portada" >PRINCIPAL</g:link></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
@@ -69,7 +69,7 @@
                          <a class="nav-link"><g:link controller="propiedad" action="create">Incorporar propiedad</g:link></a>
                       </li>
                        <li class="nav-item">
-                         <a class="nav-link"><g:link controller="ingresar" action="ingresar">INGRESAR</g:link></a>
+                         <a class="nav-link"><g:link controller="ingresar" action="logout">CERRAR SESION</g:link></a>
                       </li>
                     </ul>
                   </div>    

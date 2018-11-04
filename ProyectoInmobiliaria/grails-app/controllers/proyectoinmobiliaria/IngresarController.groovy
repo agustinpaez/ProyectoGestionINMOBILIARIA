@@ -10,7 +10,7 @@ class IngresarController{
             if (u) {
             if (u.password == params.password) {
                     if(u.email=='agustin@gmail.com') {
-                        redirect(controller: "operador", action: "index")
+                        redirect(controller: "cliente", action: "portada")
                     }else{
                         session.usuario = u
                         redirect(controller:'cliente', action:'index')          
@@ -30,6 +30,7 @@ class IngresarController{
 
     def logout() {
       session.usuario=null
+
     }
 
 }

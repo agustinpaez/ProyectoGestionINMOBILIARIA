@@ -96,4 +96,10 @@ class ClienteController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def portada(){
+        if (request.get) {
+            render(view: 'principal')
+        }
+    }
 }
