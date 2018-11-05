@@ -43,30 +43,27 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
             <div class="container">
-                  <a class="navbar-brand" href="#"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
+                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
+                      <!-- <li class="nav-item">
                         <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link"><g:link controller="propiedad" action="mostrar" >Propiedades en Venta</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
+                        <a class="nav-link"><g:link controller="propiedad" action="mostrarAlq" >Propiedades en Alquiler</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                         <a class="nav-link"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"><g:link controller="usuario" action="create" >    ¿ERES NUEVO?</g:link></a>
+                         <a class="nav-link" style="margin-right:8px;"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>
                       </li>
                     </ul>
                   </div>    

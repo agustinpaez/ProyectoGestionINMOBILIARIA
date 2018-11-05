@@ -96,4 +96,16 @@ class PropiedadController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def mostrar(){
+         if (request.get) {
+            render(view: 'venta')
+        }
+    }
+
+    def mostrarAlq(){
+         if (request.get) {
+            render(view: 'alquiler')
+        }
+    }
 }
