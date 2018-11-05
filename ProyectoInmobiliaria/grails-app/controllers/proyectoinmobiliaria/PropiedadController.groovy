@@ -99,15 +99,12 @@ class PropiedadController {
     }
 
     def mostrar(){
-         if (request.get) {
-           
-            render(view: 'venta')
-        }
+         respond propiedadService.list(params), view: 'venta'
     }
 
     def mostrarAlq(){
-         if (request.get) {
-            render(view: 'alquiler')
-        }
+
+            respond propiedadService.list(params), view: 'alquiler'
+        
     }
 }

@@ -44,6 +44,10 @@ class ConsultaController {
         }
     }
 
+    def consultar(){
+        respond consultaService.list(params),view:'pregunta'
+    }
+
     def edit(Long id) {
         respond consultaService.get(id)
     }
@@ -87,11 +91,6 @@ class ConsultaController {
         }
     }
 
-    def consultar(){
-         if (request.get) {
-            render(view: 'consultar')
-        }
-    }
     
 
     protected void notFound() {
