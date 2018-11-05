@@ -4,6 +4,7 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'consulta.label', default: 'Consulta')}" />
         <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
     </head>
     <body>
 
@@ -28,7 +29,10 @@
                 
             </div>
             
-        </div> -->
+        </div>
+ -->
+
+        <br><br><br><br><br><br>
         
 
         <div id="list-consulta" class="content scaffold-list" role="main">

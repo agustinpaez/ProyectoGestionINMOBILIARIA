@@ -4,6 +4,7 @@
         <meta name="layout" content="admin" />
         <g:set var="entityName" value="${message(code: 'cliente.label', default: 'Cliente')}" />
         <title><g:message code="default.edit.label" args="[entityName]" /></title>
+        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
     </head>
     <body>
        <!--  <a href="#edit-cliente" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>

@@ -4,7 +4,7 @@
         <meta name="layout" content="admin" />
         <g:set var="entityName" value="${message(code: 'cliente.label', default: 'Cliente')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
-        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'estilo.css')}">
+        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'bootstrap.css')}">
     </head>
     <body>
