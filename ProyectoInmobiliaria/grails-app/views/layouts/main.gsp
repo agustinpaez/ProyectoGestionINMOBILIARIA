@@ -60,7 +60,7 @@
                         <a class="nav-link"><g:link controller="propiedad" action="mostrarAlq" >Propiedades en Alquiler</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                        <a class="nav-link"><g:link controller="consulta" action="consultar" >Preguntas Frecuentes</g:link></a>
                       </li>
                       <li class="nav-item">
                          <a class="nav-link" style="margin-right:8px;"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>

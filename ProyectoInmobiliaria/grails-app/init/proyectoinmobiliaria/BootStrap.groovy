@@ -4,6 +4,25 @@ class BootStrap {
 
     def init = { servletContext ->
 
+    	//CONSULTAS 
+
+
+	    def consulta1 = new Consulta(
+
+	        pregunta:'¿Estan trabajando en el interior del pais?',
+	        respuesta:'Por ahora estamos trabajando en la provincia de Catamarca. Muchas gracias por consultar'
+
+	        )
+	    consulta1.save(flush:true)
+
+	     def consulta2 = new Consulta(
+
+	        pregunta:'¿Cuales son los medios de pago disponibles?',
+	        respuesta:'Trabajamos con efectivo, tarjetas de credito y debito y tambien creditos personales. Muchas gracias por consultar'
+
+	        )
+	     consulta2.save(flush:true)
+
     	//CLIENTES
 
     	def cliente1 = new Cliente(

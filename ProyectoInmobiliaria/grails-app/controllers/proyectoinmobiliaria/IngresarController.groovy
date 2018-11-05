@@ -13,7 +13,7 @@ class IngresarController{
                         redirect(controller: "cliente", action: "portada")
                     }else{
                         session.usuario = u
-                        redirect(controller:'cliente', action:'index')          
+                        redirect(controller:'cliente', action:'portada')          
                     }
 
                     } else {

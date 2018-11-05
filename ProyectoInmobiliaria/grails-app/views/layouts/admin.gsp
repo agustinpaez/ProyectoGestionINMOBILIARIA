@@ -22,7 +22,7 @@
         }
 
         li{
-            padding-right: 20px;
+            padding-right: 5px;
         }
 
         .footer {
@@ -61,6 +61,9 @@
                       </li>
                        <li class="nav-item">
                         <a class="nav-link"><g:link controller="usuario" action="index" >USUARIOS</g:link></a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link"><g:link controller="consulta" action="index" >Responder Consultas</g:link></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="cliente" action="create" >Incorporar Cliente</g:link></a>

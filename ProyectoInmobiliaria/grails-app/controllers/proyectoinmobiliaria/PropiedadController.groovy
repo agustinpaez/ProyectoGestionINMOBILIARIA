@@ -70,6 +70,7 @@ class PropiedadController {
         }
     }
 
+
     def delete(Long id) {
         if (id == null) {
             notFound()
@@ -99,6 +100,7 @@ class PropiedadController {
 
     def mostrar(){
          if (request.get) {
+           
             render(view: 'venta')
         }
     }
