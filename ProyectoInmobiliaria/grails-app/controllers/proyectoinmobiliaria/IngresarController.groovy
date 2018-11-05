@@ -30,6 +30,7 @@ class IngresarController{
 
     def logout() {
       session.usuario=null
+      render(view: "../index")
 
     }
 
