@@ -7,22 +7,20 @@
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
     </head>
     <body>
-
-        <!-- <div class="row">
+        <br>
+        <div class="row">
             <div class="col-md-3">
                 
             </div>
 
             <div id="duda" class="col-md-6">
-                <div id="create-consulta" class="content scaffold-create" role="main">
-                    <g:form class="form-control" method="POST">
-                        <fieldset class="form">
+                    <g:form controller="consulta" action="crearPregunta" method="POST">
+                       
                             <label>Ingrese su consulta:</label>
-                            <g:textArea name="pregunta" value="pregunta"/>
-                            <g:submitButton name="create" class="save btn btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-                        </fieldset>
+                            <textarea name="pregunta" placeholder="Ingrese su consulta"></textarea>
+                            <button class="btn btn-primary" type="submit">ENVIAR</button>
+                        
                      </g:form>
-                </div>
             </div>
 
             <div class="col-md-3">
@@ -30,9 +28,9 @@
             </div>
             
         </div>
- -->
 
-        <br><br><br><br><br><br>
+
+        <br>
         
 
         <div id="list-consulta" class="content scaffold-list" role="main">

@@ -22,6 +22,14 @@ class ConsultaController {
         respond new Consulta(params)
     }
 
+    def crearPregunta(){
+
+        def cons1=new Consulta(pregunta:params.pregunta)
+        this.save(cons1)
+        render(view:'pregunta')
+
+    }
+
     def save(Consulta consulta) {
         if (consulta == null) {
             notFound()

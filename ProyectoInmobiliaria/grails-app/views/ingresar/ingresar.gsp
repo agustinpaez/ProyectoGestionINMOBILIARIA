@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main" />
-    <meta name="layout" content="text/html; charset=UTF-8"/>
+    
     <title>Ingresar</title>
     <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'estilo.css')}">
     <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'bootstrap.css')}">

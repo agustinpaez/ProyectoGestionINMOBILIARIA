@@ -7,6 +7,6 @@ class Consulta {
 
     static constraints = {
     	pregunta(blank:false)
-    	respuesta(blank:true)
+    	respuesta(blank:true, nullable:true)
     }
 }
