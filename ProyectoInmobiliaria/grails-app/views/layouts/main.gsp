@@ -54,10 +54,10 @@
                         <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
                       </li> -->
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="mostrar" >Propiedades en Venta</g:link></a>
+                        <a class="nav-link"><g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="mostrarAlq" >Propiedades en Alquiler</g:link></a>
+                        <a class="nav-link"><g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="consulta" action="consultar" >Preguntas Frecuentes</g:link></a>

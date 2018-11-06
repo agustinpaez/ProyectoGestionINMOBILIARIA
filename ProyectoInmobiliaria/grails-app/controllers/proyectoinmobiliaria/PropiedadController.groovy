@@ -6,9 +6,18 @@ import static org.springframework.http.HttpStatus.*
 class PropiedadController {
 
     PropiedadService propiedadService
+    def GestionService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def venta(){
+        [listadoVentas: GestionService.listarVentas()]
+    }
+
+    def alquiler(){
+        [listadoAlquiler: GestionService.listarAlquiler()]
+    }
+    
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond propiedadService.list(params), model:[propiedadCount: propiedadService.count()]
@@ -98,13 +107,4 @@ class PropiedadController {
         }
     }
 
-    def mostrar(){
-         respond propiedadService.list(params), view: 'venta'
-    }
-
-    def mostrarAlq(){
-
-            respond propiedadService.list(params), view: 'alquiler'
-        
-    }
 }

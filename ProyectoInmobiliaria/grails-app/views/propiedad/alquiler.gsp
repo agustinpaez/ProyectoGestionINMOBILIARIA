@@ -20,8 +20,7 @@
             </g:if>
             <f:table collection="${propiedadList}" />
 
-<!-- 
-            <f:table collection="${listaAlquiler}"/> -->
+            <f:table collection="${listaAlquiler}"/>
         </div>
     </body>
 </html>
