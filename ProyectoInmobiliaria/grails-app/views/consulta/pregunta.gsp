@@ -34,7 +34,7 @@
         
 
         <div id="list-consulta" class="content scaffold-list" role="main">
-            <h1>Preguntas Frecuentes:</h1>
+            <h1>Preguntas:</h1>
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>

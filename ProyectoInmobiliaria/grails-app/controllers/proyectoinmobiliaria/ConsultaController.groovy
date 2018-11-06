@@ -25,8 +25,8 @@ class ConsultaController {
     def crearPregunta(){
 
         def cons1=new Consulta(pregunta:params.pregunta)
-        this.save(cons1)
-        render(view:'pregunta')
+        consultaService.save(cons1)
+        redirect(controller:'consulta', action:'consultar') 
 
     }
 
