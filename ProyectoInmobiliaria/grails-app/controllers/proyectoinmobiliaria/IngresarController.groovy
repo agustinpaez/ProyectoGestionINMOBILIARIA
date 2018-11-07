@@ -54,7 +54,7 @@ class IngresarController{
 
     def logout() {
       session.usuario=null
-      render(view: "../index")
+      redirect(controller:'propiedad', action:'indexPrincipal')
 
     }
 
