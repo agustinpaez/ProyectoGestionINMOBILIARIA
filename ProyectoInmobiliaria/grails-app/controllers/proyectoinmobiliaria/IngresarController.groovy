@@ -10,6 +10,7 @@ class IngresarController{
             if (u) {
             if (u.password == params.password) {
                     if(u.email=='agustin@gmail.com') {
+                        session.usuario = u 
                         redirect(controller: "cliente", action: "portada")
                     }else{
                         session.usuario = u
@@ -23,6 +24,21 @@ class IngresarController{
                 render(view: "ingresar", model: [message: "No existe el usuario ingresado"])
             }
     }
+
+ //    if (request.get) {
+ // return 
+ // def u = User.findByLogin(params.login)
+ // if (u) {
+ // if (u.password == params.password) {
+ // session.user = u
+ // redirect(action: "home")
+ // } else {
+ // render(view: "login", model:
+ // [message: "Password incorrect"])
+ // }
+ // } else {
+ // render(view: "login", model:
+ // [message: "User not found"]) } }
 
     def iniciar(){
         
