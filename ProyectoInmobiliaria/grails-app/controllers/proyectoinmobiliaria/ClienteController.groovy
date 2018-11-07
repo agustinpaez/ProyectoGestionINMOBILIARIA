@@ -22,6 +22,11 @@ class ClienteController {
         respond new Cliente(params)
     }
 
+    def listar(){
+        respond clienteService.list(params),view:'listar'
+    }
+
+
     def save(Cliente cliente) {
         if (cliente == null) {
             notFound()

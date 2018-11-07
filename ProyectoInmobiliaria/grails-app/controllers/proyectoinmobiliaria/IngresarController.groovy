@@ -25,6 +25,14 @@ class IngresarController{
             }
     }
 
+
+
+
+
+
+
+    
+
  //    if (request.get) {
  // return 
  // def u = User.findByLogin(params.login)

@@ -9,6 +9,7 @@ class SecurityInterceptor {
       match(controller:"cliente", action:"edit")
       match(controller:"cliente", action:"show")
       match(controller:"cliente", action:"create")
+       match(controller:"cliente", action:"portada")
 
       match(controller:"consulta", action:"index")
       match(controller:"consulta", action:"create")
@@ -43,6 +44,7 @@ class SecurityInterceptor {
       match(controller:"cliente", action:"edit")
       match(controller:"cliente", action:"show")
       match(controller:"cliente", action:"create")
+      match(controller:"cliente", action:"portada")
 
       match(controller:"consulta", action:"index")
       match(controller:"consulta", action:"create")

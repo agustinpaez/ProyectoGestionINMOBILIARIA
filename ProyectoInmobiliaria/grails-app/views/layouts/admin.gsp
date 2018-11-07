@@ -57,7 +57,7 @@
                         <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
                       </li>
                        <li class="nav-item">
-                        <a class="nav-link"><g:link controller="cliente" action="index" >CLIENTES</g:link></a>
+                        <a class="nav-link"><g:link controller="cliente" action="listar" >CLIENTES</g:link></a>
                       </li>
                        <li class="nav-item">
                         <a class="nav-link"><g:link controller="usuario" action="index" >USUARIOS</g:link></a>
