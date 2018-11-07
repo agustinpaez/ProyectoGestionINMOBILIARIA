@@ -29,10 +29,37 @@ class BootStrap {
     		nombre:'Roberto',
     		apellido:'Gomez',
     		dni:12398765,
+    		calidadDeCliente:'Interesado',
     		direccion:'Valle viejo',
     		telefono:'6374635267',
     		email:'roberto@gmail.com'
     		)
+    	cliente1.save(flush:true)
+
+    	def cliente2 = new Cliente(
+    		nombre:'Carlos',
+    		apellido:'Cardozo',
+    		dni:12365765,
+    		calidadDeCliente:'Interesado',
+    		direccion:'Terebintos',
+    		telefono:'6374195267',
+    		email:'carlos@gmail.com'
+    		)
+
+    	cliente2.save(flush:true)
+
+
+    	def cliente3 = new Cliente(
+    		nombre:'Jazmin',
+    		apellido:'Palacios',
+    		dni:12393465,
+    		calidadDeCliente:'Interesado',
+    		direccion:'Parque America',
+    		telefono:'6343635267',
+    		email:'jazmin@gmail.com'
+    		)
+
+    	cliente3.save(flush:true)
 
     	//PROPIEDADES
 
@@ -85,7 +112,7 @@ class BootStrap {
  		
 	    //USER
 
-	    	def usuario1 = new Usuario(nombre:"Agustin" , apellido:"Paez" , dni:39496977 ,
+	    	def usuario1 = new Usuario(nombre:"Agustin" , apellido:"Paez" , dni:39496977 , calidadDeCliente:'User',
 	    	direccion:"Parque America",telefono:1234567898, 
 	    	propiedad:null, nombreUsuario: "Agustin" ,
 	    	password: "12345",email: "agustin@gmail.com")
@@ -109,7 +136,7 @@ class BootStrap {
 		      }
 		    }
 
-		    def usuario2 = new Usuario(nombre:"Juan" , apellido:"Daneri" , dni:36728281 ,
+		    def usuario2 = new Usuario(nombre:"Juan" , apellido:"Daneri" , dni:36728281 , calidadDeCliente:'User',
 	    	direccion:"Llegando a tucuman",telefono:1264567898, 
 	    	propiedad:null, nombreUsuario: "Juan" ,
 	    	password: "12345",email: "juan@gmail.com")
