@@ -43,7 +43,7 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
             <div class="container">
-                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
+                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"><g:link controller="propiedad" action="indexPrincipal" ></g:link></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
