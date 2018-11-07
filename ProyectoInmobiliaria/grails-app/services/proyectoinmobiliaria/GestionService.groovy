@@ -6,12 +6,19 @@ import grails.gorm.transactions.Transactional
 class GestionService {
 
       List listarVentas() {
-            def ofertasVentas = Propiedad.findAll("from Propiedad as p where p.categoria=:venta", [venta: 'Venta'])
-            return ofertasVentas
+            def ventas = Propiedad.findAll("from Propiedad as p where p.categoria=:venta", [venta: 'Venta'])
+            return ventas
             }
 
       List listarAlquiler() {
-            def ofertasAlquiler = Propiedad.findAll("from Propiedad as p where p.categoria=:alquiler", [alquiler: 'Alquiler'])
-            return ofertasAlquiler
+            def alquiler = Propiedad.findAll("from Propiedad as p where p.categoria=:alquiler", [alquiler: 'Alquiler'])
+            return alquiler
             }
+
+      List listarTodo() {
+            def todo = Propiedad.findAll("from Propiedad as p ", [todo: 'Todo'])
+            return todo
+            }
+
+
 }

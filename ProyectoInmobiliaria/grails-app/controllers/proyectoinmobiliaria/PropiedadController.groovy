@@ -17,6 +17,12 @@ class PropiedadController {
     def alquiler(){
         [listadoAlquiler: GestionService.listarAlquiler()]
     }
+
+    def indexPrincipal(){
+        respond propiedadService.list(params),view:'indexPrincipal'
+            
+        [listadoTodo: GestionService.listarTodo()]
+    }
     
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
