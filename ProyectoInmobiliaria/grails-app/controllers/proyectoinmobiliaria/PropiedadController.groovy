@@ -18,8 +18,16 @@ class PropiedadController {
         [listadoAlquiler: GestionService.listarAlquiler()]
     }
 
+    def oferta(){
+        [listadoOferta: GestionService.listarOferta()]
+    }
+
     def indexPrincipal(){
+<<<<<<< HEAD
         respond propiedadService.list(params),view:'indexPrincipal' 
+=======
+asdasd
+>>>>>>> 45e5ad74b563c9591341b7c9fe7484c891be0acb
         [listadoTodo: GestionService.listarTodo()]
     }
     
