@@ -12,26 +12,48 @@
 
     <asset:stylesheet src="application.css"/>
     <style>
+
+        .navbar{
+            padding-top:0px !important; padding-bottom:0 !important;
+            height:70px !important;
+        }
+
         a{
             padding-left: 2px;
             color: #000000;
+            text-decoration: none;
             text-decoration: none;
         }
         .navbar-default a{
             color: black;
         }
 
+
         li{
-            padding-right: 5px;
+            margin-top: 10px;
+            padding-right: 25px;
+            text-decoration: none;
         }
 
         .footer {
             font-size: 15px;
             font-weight: bold;
+            text-decoration: none;
         }
 
         .navbar{
             list-style:none;
+            text-decoration: none;
+        }
+         #logo{
+          margin-top: 2px;
+          width:50px;
+          height:50px;
+          border-radius:35px;
+        }
+
+        #login{
+          margin-left: 200px
         }
 
     </style>
@@ -43,7 +65,7 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
             <div class="container">
-                  <a class="navbar-brand" href="#"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
+                  <a class="navbar-brand" href="#"><img id="logo" class="img-circle" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
@@ -51,31 +73,34 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="cliente" action="portada" >PRINCIPAL</g:link></a>
+                        <g:link controller="cliente" action="portada" >PRINCIPAL</g:link>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="index" >PROPIEDADES</g:link></a>
+                      <li class="dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROPIEDADES<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><g:link controller="propiedad" action="index" >Listar Propiedades</g:link></li>
+                            <li><g:link controller="propiedad" action="create">Incorporar propiedad</g:link></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">CLIENTES<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><g:link controller="cliente" action="listar" >Listar Clientes</g:link></li>
+                            <li><g:link controller="cliente" action="create">Incorporar Cliente</g:link></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">USUARIOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><g:link controller="usuario" action="index" >Listar Usuarios</g:link></li>
+                            <li><g:link controller="usuario" action="create">Incorporar Usuario</g:link></li>
+                        </ul>
                       </li>
                        <li class="nav-item">
-                        <a class="nav-link"><g:link controller="cliente" action="listar" >CLIENTES</g:link></a>
+                        <g:link controller="consulta" action="index" >Responder Consultas</g:link>
                       </li>
-                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="usuario" action="index" >USUARIOS</g:link></a>
-                      </li>
-                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="consulta" action="index" >Responder Consultas</g:link></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"><g:link controller="cliente" action="create" >Incorporar Cliente</g:link></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"><g:link controller="usuario" action="create" >Incorporar Usuario</g:link></a>
-                      </li>
-                       <li class="nav-item">
-                         <a class="nav-link"><g:link controller="propiedad" action="create">Incorporar propiedad</g:link></a>
-                      </li>
-                       <li class="nav-item">
-                         <a class="nav-link"><g:link controller="ingresar" action="logout">CERRAR SESION</g:link></a>
+                       <li class="nav-item" id="login">
+                         <g:link controller="ingresar" action="logout">CERRAR SESION</g:link>
                       </li>
                     </ul>
                   </div>    

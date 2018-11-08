@@ -47,8 +47,7 @@
         }
 
         #login{
-          text-align: right;
-          margin-right: 0px;
+          margin-left: 100px
         }
 
     </style>

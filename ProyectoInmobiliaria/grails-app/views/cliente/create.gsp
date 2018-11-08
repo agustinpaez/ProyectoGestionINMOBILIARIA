@@ -6,6 +6,8 @@
         <title><g:message code="default.create.label" args="[entityName]" /></title>
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'bootstrap.css')}">
+        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'forms.css')}">
+
     </head>
     <body>
        <!--  <a href="#create-cliente" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
