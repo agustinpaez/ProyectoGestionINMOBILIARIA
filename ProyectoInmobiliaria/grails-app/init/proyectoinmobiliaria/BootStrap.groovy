@@ -75,7 +75,8 @@ class BootStrap {
 	    piso:7,
 	    nDepartamento:75,
 	    categoria: 'Venta',
-	    estado:'Disponible')
+	    estado:'Disponible',
+			oferta:'Si')
 	    prop1.save(flush:true)
 
 	    def prop3= new Propiedad( calle:'Rivadavia',
@@ -90,7 +91,8 @@ class BootStrap {
 	    piso:0,
 	    nDepartamento:0,
 	    categoria: 'Venta',
-	    estado:'Disponible')
+	    estado:'Disponible',
+			oferta:'No')
 	    prop3.save(flush:true)
 
 	    def prop2= new Propiedad( calle:'Brasil',
@@ -105,7 +107,8 @@ class BootStrap {
 	    piso:0,
 	    nDepartamento:0,
 	    categoria: 'Alquiler',
-	    estado:'Disponible')
+	    estado:'Disponible',
+			oferta:'Si')
 	    prop2.save(flush:true)
 
 

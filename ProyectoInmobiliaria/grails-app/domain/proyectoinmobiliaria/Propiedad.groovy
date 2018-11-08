@@ -16,6 +16,8 @@ class Propiedad {
         String categoria
         String estado
 
+        String oferta
+
     static constraints = {
 
         calle(blank: false, maxSize: 70)
@@ -32,7 +34,7 @@ class Propiedad {
         categoria (blank: false, maxSize: 20, inList:['Venta','Alquiler'])
         estado (blank: false, maxSize: 15, inList:['Vendida', 'Alquilada', 'Disponible'])
 
-
+        oferta (blank: false, maxSize: 2, inList:['Si','No'])
 
     }
 }
