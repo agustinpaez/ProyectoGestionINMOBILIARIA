@@ -50,15 +50,19 @@
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">
-                      <!-- <li class="nav-item">
-                        <a class="nav-link" href="${createLink(uri: '/')}">Home <span class="sr-only">(current)</span></a>
-                      </li> -->
+
+                      <li class="nav-item">
+                        <a class="nav-link"><g:link controller="propiedad" action="oferta" >Propiedades en Oferta</g:link></a>
+                      </li>
+                      
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link></a>
                       </li>
+
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link></a>
                       </li>
+                      
                       <li class="nav-item">
                         <a class="nav-link"><g:link controller="consulta" action="consultar" >Preguntas Frecuentes</g:link></a>
                       </li>

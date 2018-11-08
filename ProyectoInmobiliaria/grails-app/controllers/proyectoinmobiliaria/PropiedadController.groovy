@@ -18,8 +18,12 @@ class PropiedadController {
         [listadoAlquiler: GestionService.listarAlquiler()]
     }
 
-    def indexPrincipal(){
+    def oferta(){
+        [listadoOferta: GestionService.listarOferta()]
+    }
 
+    def indexPrincipal(){
+asdasd
         [listadoTodo: GestionService.listarTodo()]
     }
     
