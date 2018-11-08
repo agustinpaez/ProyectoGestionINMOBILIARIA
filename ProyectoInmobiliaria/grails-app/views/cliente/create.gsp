@@ -39,6 +39,44 @@
                 </g:form>
             </div>
         </div> -->
+        <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+             <div class="col-md-6">
+                 <br>
+                    <h1 class="text-center" align="text-center">REGISTRO DE CLIENTE</h1><br>
+                    <div class="row">
+                        <g:hasErrors bean="${this.cliente}">
+                        <ul class="errors" role="alert">
+                            <g:eachError bean="${this.cliente}" var="error">
+                            <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
+                            </g:eachError>
+                        </ul>
+                        </g:hasErrors>
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <g:form resource="${this.cliente}" method="POST">
+                            <fieldset class="form">
+                                <f:all bean="cliente"/>
+                                <g:submitButton name="create" class="save" class="btn btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+                            </fieldset>     
+                        </g:form>
+                        </div>
+            <div class="col-md-2">
+                
+            </div>
+            
+        </div>
+            </div>
+             <div class="col-md-3">
+                
+            </div>
+            
+        </div>
+
         <br>
         <h1 class="text-center" align="text-center">REGISTRO DE CLIENTE</h1><br>
         <div class="row">

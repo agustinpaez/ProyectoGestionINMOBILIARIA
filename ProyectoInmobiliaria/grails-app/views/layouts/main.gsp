@@ -12,6 +12,12 @@
 
     <asset:stylesheet src="application.css"/>
     <style>
+
+        .navbar{
+            padding-top:0px !important; padding-bottom:0 !important;
+            min-height:50px !important;
+        }
+       
         a{
             padding-left: 2px;
             color: #000000;
@@ -22,6 +28,8 @@
         }
 
         li{
+            font-size: 12px;
+            padding-top: 20px;
             padding-right: 20px;
         }
 
@@ -30,8 +38,17 @@
             font-weight: bold;
         }
 
-        .navbar{
-            list-style:none;
+
+        }
+       #logo{
+          width:35px;
+          height:35px;
+          border-radius:35px;
+        }
+
+        #login{
+          text-align: right;
+          margin-right: 0px;
         }
 
     </style>
@@ -43,7 +60,7 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
             <div class="container">
-                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logoInm" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"><g:link controller="propiedad" action="indexPrincipal" ></g:link></a>
+                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logo" class="img-circle" height="50%" width="50%" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"><g:link controller="propiedad" action="indexPrincipal" ></g:link></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
@@ -52,22 +69,26 @@
                     <ul class="navbar-nav ml-auto">
 
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="oferta" >Propiedades en Oferta</g:link></a>
+                        <g:link controller="propiedad" action="oferta" >Propiedades en Oferta</g:link>
                       </li>
                       
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link></a>
+                       <g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link></a>
+                        <g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link>
                       </li>
                       
                       <li class="nav-item">
-                        <a class="nav-link"><g:link controller="consulta" action="consultar" >Preguntas Frecuentes</g:link></a>
+                       <g:link controller="consulta" action="consultar">Preguntas Frecuentes</g:link>
                       </li>
-                      <li class="nav-item">
-                         <a class="nav-link" style="margin-right:8px;"><g:link controller="ingresar" action="ingresar">Ingresar</g:link></a>
+                     <g:form action="#" method="post" class="form-inline my-2 mylg-0">
+                          <input type="search" name="buscar" id="buscar" class="form-control mr-sm-2" placeholder="Buscar..." aria-label="Buscar">
+                          <button class="btn btn-primary" type="submit">Buscar</button>
+                      </g:form>
+                      <li class="nav-item navbar-right" id="login">
+                        <g:link controller="ingresar" action="ingresar">Ingresar</g:link>
                       </li>
                     </ul>
                   </div>    

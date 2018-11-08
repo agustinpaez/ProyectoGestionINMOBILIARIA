@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="layout" content="admin" />
+        <meta name="layout" content="nav" />
         <g:set var="entityName" value="${message(code: 'operador.label', default: 'Operador')}" />
         <title><g:message code="default.list.label" args="[entityName]" /></title>
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
