@@ -19,8 +19,7 @@ class PropiedadController {
     }
 
     def indexPrincipal(){
-        respond propiedadService.list(params),view:'indexPrincipal'
-            
+
         [listadoTodo: GestionService.listarTodo()]
     }
     

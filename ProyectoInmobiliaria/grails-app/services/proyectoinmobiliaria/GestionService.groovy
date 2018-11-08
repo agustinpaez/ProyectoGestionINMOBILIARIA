@@ -15,10 +15,9 @@ class GestionService {
             return alquiler
             }
 
-      List listarTodo() {
-            def todo = Propiedad.findAll("from Propiedad as p ", [todo: 'Todo'])
+       List listarTodo() {
+            def todo = Propiedad.findAll("from Propiedad as p where p.categoria=:alquiler or p.categoria=:venta", [alquiler: 'Alquiler', venta: 'Venta'])
             return todo
             }
-
 
 }
