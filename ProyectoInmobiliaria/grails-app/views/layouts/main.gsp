@@ -50,6 +50,17 @@
           margin-left: 100px
         }
 
+        footer{
+          background-color: blue;
+          width: 100%;
+          height: 40px;
+          border-top: 2px solid #000;
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 0px;
+          color: white;
+        }
+
     </style>
 
     <g:layoutHead/>
@@ -95,6 +106,15 @@
         </nav>
 
     <g:layoutBody/>
+
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright: Facultad de Tecnologia y Ciencias Aplicadas - Programacion III
+      </div>
+      <!-- Copyright -->
+
+    </footer>
 
    <!--  <div class="footer" role="contentinfo">
     </div> -->

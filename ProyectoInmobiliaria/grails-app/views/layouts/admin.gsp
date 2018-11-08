@@ -56,6 +56,16 @@
           margin-left: 200px
         }
 
+        footer{
+          background-color: black;
+          width: 100%;
+          height: 40px;
+          border-top: 2px solid #000;
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 0px;
+        }
+
     </style>
 
     <g:layoutHead/>
@@ -63,7 +73,7 @@
 
 <body id="cuerpo">
 
-     <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
+     <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: black">
             <div class="container">
                   <a class="navbar-brand" href="#"><img id="logo" class="img-circle" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,6 +118,15 @@
         </nav>
 
     <g:layoutBody/>
+
+     <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright: Facultad de Tecnologia y Ciencias Aplicadas - Programacion III
+      </div>
+      <!-- Copyright -->
+
+    </footer>
 
     <!-- <div class="footer" role="contentinfo">
     </div> -->
