@@ -75,10 +75,12 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: black">
             <div class="container">
+                  <g:link controller="cliente" action="portada" >
                   <a class="navbar-brand" href="#"><img id="logo" class="img-circle" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
+                  </g:link>
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">

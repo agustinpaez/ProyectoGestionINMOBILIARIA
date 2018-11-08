@@ -5,6 +5,7 @@
         <g:set var="entityName" value="${message(code: 'consulta.label', default: 'Consulta')}" />
         <title><g:message code="default.list.label" args="[entityName]" /></title>
         <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'portada.css')}">
+        <link rel="stylesheet" href="${resource(dir:'stylesheet', file:'fondo.css')}">
     </head>
     <body>
         <br>

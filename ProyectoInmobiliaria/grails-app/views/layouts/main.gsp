@@ -70,10 +70,11 @@
 
      <nav class="navbar navbar-expand-md fixed-top top-nav" style="background-color: blue">
             <div class="container">
-                  <a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logo" class="img-circle" height="50%" width="50%" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"><g:link controller="propiedad" action="indexPrincipal" ></g:link></a>
+                  <g:link controller="propiedad" action="indexPrincipal" ><a class="navbar-brand" href="${createLink(uri: '/')}"><img id="logo" class="img-circle" height="50%" width="50%" src="https://www.termasentrerios.com/wp-content/uploads/2018/01/casa.jpg"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
                   </button>
+                  </g:link>
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">

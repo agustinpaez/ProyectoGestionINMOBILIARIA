@@ -12,7 +12,7 @@
     <g:if test="${message}">
       <div class="message" role="status">${message}</div>
     </g:if>
-      <br><br><br><br><br>
+      <br>
       <div class="row">
         <div class="col-md-3">
           
