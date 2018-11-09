@@ -63,53 +63,53 @@ class BootStrap {
 
     	//PROPIEDADES
 
-    	def prop1= new Propiedad( calle:'Belgrano',
-	    numero: 125,
-	    barrio:'Centro',
-	    localidad:'Capital',
-	    ciudad: 'San Fernando del Valle de Catamarca',
-	    precio: 1000000,
-	    tipo:'Departamento',
-	    cantBanios:1,
-	    cantDormitorios:2,
-	    piso:7,
-	    nDepartamento:75,
-	    categoria: 'Venta',
-	    estado:'Disponible',
-			oferta:'Si')
-	    prop1.save(flush:true)
+   //  	def prop1= new Propiedad( calle:'Belgrano',
+	  //   numero: 125,
+	  //   barrio:'Centro',
+	  //   localidad:'Capital',
+	  //   ciudad: 'San Fernando del Valle de Catamarca',
+	  //   precio: 1000000,
+	  //   tipo:'Departamento',
+	  //   cantBanios:1,
+	  //   cantDormitorios:2,
+	  //   piso:7,
+	  //   nDepartamento:75,
+	  //   categoria: 'Venta',
+	  //   estado:'Disponible',
+			// oferta:'Si')
+	  //   prop1.save(flush:true)
 
-	    def prop3= new Propiedad( calle:'Rivadavia',
-	    numero: 0,
-	    barrio:'Centro',
-	    localidad:'Capital',
-	    ciudad: 'San Fernando del Valle de Catamarca',
-	    precio: 4500000,
-	    tipo:'Casa',
-	    cantBanios:2,
-	    cantDormitorios:4,
-	    piso:0,
-	    nDepartamento:0,
-	    categoria: 'Venta',
-	    estado:'Disponible',
-			oferta:'No')
-	    prop3.save(flush:true)
+	  //   def prop3= new Propiedad( calle:'Rivadavia',
+	  //   numero: 0,
+	  //   barrio:'Centro',
+	  //   localidad:'Capital',
+	  //   ciudad: 'San Fernando del Valle de Catamarca',
+	  //   precio: 4500000,
+	  //   tipo:'Casa',
+	  //   cantBanios:2,
+	  //   cantDormitorios:4,
+	  //   piso:0,
+	  //   nDepartamento:0,
+	  //   categoria: 'Venta',
+	  //   estado:'Disponible',
+			// oferta:'No')
+	  //   prop3.save(flush:true)
 
-	    def prop2= new Propiedad( calle:'Brasil',
-	    numero: 1250,
-	    barrio:'Parque America',
-	    localidad:'Capital',
-	    ciudad: 'San Fernando del Valle de Catamarca',
-	    precio: 1900000,
-	    tipo:'Casa',
-	    cantBanios:1,
-	    cantDormitorios:3,
-	    piso:0,
-	    nDepartamento:0,
-	    categoria: 'Alquiler',
-	    estado:'Disponible',
-			oferta:'Si')
-	    prop2.save(flush:true)
+	  //   def prop2= new Propiedad( calle:'Brasil',
+	  //   numero: 1250,
+	  //   barrio:'Parque America',
+	  //   localidad:'Capital',
+	  //   ciudad: 'San Fernando del Valle de Catamarca',
+	  //   precio: 1900000,
+	  //   tipo:'Casa',
+	  //   cantBanios:1,
+	  //   cantDormitorios:3,
+	  //   piso:0,
+	  //   nDepartamento:0,
+	  //   categoria: 'Alquiler',
+	  //   estado:'Disponible',
+			// oferta:'Si')
+	  //   prop2.save(flush:true)
 
 
  		
