@@ -16,7 +16,7 @@
         </div> -->
 
 <br>
-      <div class="album py-5 bg-light">
+      <!-- <div class="album py-5 bg-light"> -->
         <div class="container">
        
        <g:each in="${listadoVentas?}"  
@@ -51,10 +51,10 @@
            
        </g:each>
         </div>
-        </div>
+        <!-- </div> -->
     
         <div id="list-propiedad" class="content scaffold-list" role="main">
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <!-- <h1><g:message code="default.list.label" args="[entityName]" /></h1> -->
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>

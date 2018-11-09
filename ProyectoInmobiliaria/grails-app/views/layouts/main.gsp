@@ -23,14 +23,20 @@
             color: #000000;
             text-decoration: none;
         }
+
         .navbar-default a{
             color: black;
+        }
+
+        #busqueda{
+          margin-top: 0px;
+          padding-top: 0px;
         }
 
         li{
             font-size: 12px;
             padding-top: 20px;
-            padding-right: 20px;
+            padding-right: 30px;
         }
 
         .footer {
@@ -44,10 +50,11 @@
           width:35px;
           height:35px;
           border-radius:35px;
+          margin-top: 0px;
         }
 
         #login{
-          margin-left: 100px
+          margin-left: 300px
         }
 
         footer{
@@ -79,39 +86,52 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav ml-auto">
 
-                      <li class="nav-item">
-                        <g:link controller="propiedad" action="oferta" >Propiedades en Oferta</g:link>
-                      </li>
-                      
-                      <li class="nav-item">
-                       <g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link>
-                      </li>
+                      <li class="dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROPIEDADES<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="nav-item">
+                              <g:link controller="propiedad" action="oferta" >Propiedades en Oferta</g:link>
+                            </li>
+                            
+                            <li class="nav-item">
+                             <g:link controller="propiedad" action="venta" >Propiedades en Venta</g:link>
+                            </li>
 
-                      <li class="nav-item">
-                        <g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link>
-                      </li>
-                      
-                      <li class="nav-item">
-                       <g:link controller="consulta" action="consultar">Preguntas Frecuentes</g:link>
-                      </li>
+                            <li class="nav-item">
+                              <g:link controller="propiedad" action="alquiler" >Propiedades en Alquiler</g:link>
+                            </li>
+                               
+                        </ul>
 
+                        
 
-                     <%-- <g:form action="#" method="post" class="form-inline my-2 mylg-0">
-                          <input type="text" name="buscar" class="form-control mr-sm-2" placeholder="Buscar..." aria-label="Buscar">
-                          <button class="btn btn-primary" type="submit">Buscar</button>
-                      </g:form> --%>
-                        <g:form  class="form-wrap mt-4" action="buscar" >
-                            <div class="row d-flex justify-content-center">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                        <g:field type="text" name="buscar" placeholder="¿Que busca?" class="form-control mr-sm-2"/>
-                                        <g:submitButton  class="btn btn-primary" name="submit" value="Buscar"/>
-                                </div>
-                            </div>
-                        </g:form>
+                        <li class="nav-item">
+                             <g:link controller="consulta" action="consultar">Preguntas Frecuentes</g:link>
+                        </li>
 
-                      <li class="nav-item navbar-right" id="login">
-                        <g:link controller="ingresar" action="ingresar">Ingresar</g:link>
-                      </li>
+                        <li class="nav-item" id="login">
+                              <g:link controller="ingresar" action="ingresar" >Ingresar</g:link>
+                        </li>
+
+                         <!--   <%-- <g:form action="#" method="post" class="form-inline my-2 mylg-0">
+                                <input type="text" name="buscar" class="form-control mr-sm-2" placeholder="Buscar..." aria-label="Buscar">
+                                <button class="btn btn-primary" type="submit">Buscar</button>
+                            </g:form> --%> -->
+                            <li class="nav-item" id="busqueda">
+                              <g:form  id="busqueda" class="form-wrap mt-4" action="buscar" >
+                                  <div class="row d-flex justify-content-center">
+                                      <div class="btn-group" role="group" aria-label="Basic example">
+                                       
+                                              <g:field type="text" name="buscar" placeholder="¿Que busca?" class="form-control mr-sm-2"/>
+                            </li>
+                              <li class="nav-item">
+                                <g:submitButton  class="btn btn-primary" name="submit" value="Buscar"/>
+                                              
+                                      
+                                      </div>
+                                  </div>
+                              </g:form>
+                              </li>
                     </ul>
                   </div>    
             </div>

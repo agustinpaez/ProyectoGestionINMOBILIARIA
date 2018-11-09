@@ -23,7 +23,7 @@
            <br>
            
       
-      <div class="album py-5 bg-light">
+      <!-- <div class="album py-5 bg-light"> -->
         <div class="container">
        
        <g:each in="${listadoTodo?}"  
@@ -57,7 +57,7 @@
                 </div>
            
        </g:each>
-        </div>
+        <!-- </div> -->
         </div>
 
 
