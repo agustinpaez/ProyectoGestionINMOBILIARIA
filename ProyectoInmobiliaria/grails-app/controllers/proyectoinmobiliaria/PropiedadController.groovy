@@ -18,19 +18,28 @@ class PropiedadController {
         [listadoAlquiler: GestionService.listarAlquiler()]
     }
 
+    def buscar(){
+        println(params.buscar)
+        [listadoBuscar: GestionService.listarBusqueda(params.buscar)]
+    }
+
     def oferta(){
         [listadoOferta: GestionService.listarOferta()]
     }
 
     def indexPrincipal(){
-
-        respond propiedadService.list(params),view:'indexPrincipal' 
         [listadoTodo: GestionService.listarTodo()]
     }
     
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond propiedadService.list(params), model:[propiedadCount: propiedadService.count()]
+    }
+
+    def verImagen = {
+        def Propiedad = Propiedad.get(params.id)      
+        response.outputStream << Propiedad.imagen
+        response.outputStream.flush()      
     }
 
     def show(Long id) {

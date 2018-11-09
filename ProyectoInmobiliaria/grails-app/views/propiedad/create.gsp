@@ -26,14 +26,18 @@
                 </g:eachError>
             </ul>
             </g:hasErrors>
-            <g:form resource="${this.propiedad}" method="POST">
+            <g:uploadForm resource="${this.propiedad}" method="POST">
                 <fieldset class="form">
                     <f:all bean="propiedad"/>
                 </fieldset>
+                <br>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                 </fieldset>
-            </g:form>
+               
+                <br> <br> <br> <br>
+            
+            </g:uploadForm>
         </div>
     </body>
 </html>

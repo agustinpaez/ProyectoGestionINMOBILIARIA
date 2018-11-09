@@ -94,10 +94,21 @@
                       <li class="nav-item">
                        <g:link controller="consulta" action="consultar">Preguntas Frecuentes</g:link>
                       </li>
-                     <g:form action="#" method="post" class="form-inline my-2 mylg-0">
-                          <input type="search" name="buscar" id="buscar" class="form-control mr-sm-2" placeholder="Buscar..." aria-label="Buscar">
+
+
+                     <%-- <g:form action="#" method="post" class="form-inline my-2 mylg-0">
+                          <input type="text" name="buscar" class="form-control mr-sm-2" placeholder="Buscar..." aria-label="Buscar">
                           <button class="btn btn-primary" type="submit">Buscar</button>
-                      </g:form>
+                      </g:form> --%>
+                        <g:form  class="form-wrap mt-4" action="buscar" >
+                            <div class="row d-flex justify-content-center">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <g:field type="text" name="buscar" placeholder="¿Que busca?" class="form-control mr-sm-2"/>
+                                        <g:submitButton  class="btn btn-primary" name="submit" value="Buscar"/>
+                                </div>
+                            </div>
+                        </g:form>
+
                       <li class="nav-item navbar-right" id="login">
                         <g:link controller="ingresar" action="ingresar">Ingresar</g:link>
                       </li>

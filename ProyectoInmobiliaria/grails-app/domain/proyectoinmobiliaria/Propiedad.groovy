@@ -17,6 +17,7 @@ class Propiedad {
         String estado
 
         String oferta
+        byte[] imagen
 
     static constraints = {
 
@@ -35,6 +36,11 @@ class Propiedad {
         estado (blank: false, maxSize: 15, inList:['Vendida', 'Alquilada', 'Disponible'])
 
         oferta (blank: false, maxSize: 2, inList:['Si','No'])
+        imagen(nullable: true, maxSize: 1024 * 1024 * 2)
+        
+     }
 
+    static mapping = {
+        imagen column: 'featured_image_bytes', sqlType: 'bytea' 
     }
 }

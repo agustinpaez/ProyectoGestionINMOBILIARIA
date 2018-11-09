@@ -26,37 +26,38 @@
       <div class="album py-5 bg-light">
         <div class="container">
        
-       <g:each in="${listadoOferta?}"  
+            <g:each in="${listadoBuscar?}"  
 
- 
+        
 
-          <div class="row">
-              <div class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src=${createLink(controller:"propiedad", action:"verImagen", id:"${it.id}")} style="height: 225px; width: 100%; display: block;" data-holder-rendered="true">
-                    <div class="card-body">
-                      <p class="card-text">Direccion:${it.calle} ${it.numero} 
-                    
-                    <br> Localidad: ${it.localidad}
-                    <%-- <br> Ciudad: ${it.ciudad} --%>
-                    <br>  
-                    <br> Precio: $${it.precio}
-                      </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" src=${createLink(controller:"propiedad", action:"verImagen", id:"${it.id}")} style="height: 225px; width: 100%; display: block;" data-holder-rendered="true">
+                            <div class="card-body">
+                            <p class="card-text">Direccion:${it.calle} ${it.numero} 
+                            
+                            <br> Localidad: ${it.localidad}
+                            <%-- <br> Ciudad: ${it.ciudad} --%>
+                            <br>  
+                            <br> Precio: $${it.precio}
+                            </p>
 
 
-                      <div class="d-flex justify-content-between align-items-center">
-                        
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary"><g:link controller="consulta" action="consultar">Consultar</g:link></button>             
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><g:link controller="consulta" action="consultar">Consultar</g:link></button>             
+                                </div>
+
+                            
+                            </div>
+                            </div>
                         </div>
+                        </div>
+                
+            </g:each>
 
-                    
-                      </div>
-                    </div>
-                  </div>
-                </div>
-           
-       </g:each>
         </div>
         </div>
       

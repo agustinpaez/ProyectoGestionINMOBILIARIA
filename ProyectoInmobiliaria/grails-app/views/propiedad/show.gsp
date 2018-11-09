@@ -15,18 +15,33 @@
                 <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
             </ul>
         </div> -->
+        
         <div id="show-propiedad" class="content scaffold-show" role="main">
             <h1><g:message code="default.show.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:display bean="propiedad" />
+            <f:display bean="propiedad" except="imagen"/>
+
+
+            <div class="form-group row">
+           <label for="staticPhome" class="col-sm-4 col-form-label">Imagen:</label>
+            <div class="col-sm-7">            
+                    <img src=${createLink(controller:"propiedad", action:"verImagen", id:"${this.propiedad.id}")} width='300' />
+            </div>
+            
+
             <g:form resource="${this.propiedad}" method="DELETE">
                 <fieldset class="buttons">
                     <g:link class="edit" action="edit" resource="${this.propiedad}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
                     <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                 </fieldset>
             </g:form>
+                
+                
+
+
+            </div>
         </div>
     </body>
 </html>

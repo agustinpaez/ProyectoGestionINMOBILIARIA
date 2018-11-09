@@ -23,7 +23,17 @@ class GestionService {
       List listarOferta() {
             def oferta = Propiedad.findAll("from Propiedad as p where p.oferta=:oferta", [oferta: 'Si'])
             return oferta
-            }         
+            }
+
+      List listarBusqueda(String buscar) {
+
+            def busqueda = Propiedad.findAll("from Propiedad as p where p.calle=:parametro or p.localidad=:parametro or p.ciudad=:parametro or p.categoria=:parametro", [parametro: buscar])
+
+            return busqueda
+            }
+
+
+// ("from Propiedad as p where (p.rubro=:rubros and p.localidad=:localidades and p.barrio=:barrios)", [rubros: rubro, localidades: localidad, barrios: barrio])
 
       // List buscarCliente(params){
       //       def clientes = Cliente.findAllByNomeLike(params)
