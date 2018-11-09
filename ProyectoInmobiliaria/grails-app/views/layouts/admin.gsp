@@ -123,10 +123,9 @@
 
      <footer class="page-footer font-small blue">
 
-      <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2018 Copyright: Facultad de Tecnologia y Ciencias Aplicadas - Programacion III
       </div>
-      <!-- Copyright -->
+
 
     </footer>
 
