@@ -41,7 +41,7 @@
                 </g:form>
             </div>
         </div> -->
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-3">
                 
             </div>
@@ -79,7 +79,7 @@
             
         </div>
 
-        <br>
+        <br> -->
         <h1 class="text-center" align="text-center">REGISTRO DE CLIENTE</h1><br>
         <div class="row">
             <g:hasErrors bean="${this.cliente}">
