@@ -12,5 +12,15 @@ class UrlMappings {
         "/"(view:"/propiedad/indexPrincipal", controller: 'propiedad', action:'indexPrincipal')
         "500"(view:'/error')
         "404"(view:'/notFound')
+
+
+
+        "/propiedades"(resources:"Propiedad"){
+
+        collection {"/categoria"(controller: "API", action: "listaPorCategoria")}
+    
+        }
+
+
     }
 }
